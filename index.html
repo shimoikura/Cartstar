@@ -13,21 +13,21 @@
     <!-- Header -->
     <nav class="navbar navbar-default">
       <div class="container">
-        <div class="firstheader navbar-header">
-          <div class="header-message">
+        <!-- FirstHeader -->
+        <div class="firstheader">
+          <div class="firstheader-left header-message navbar-header">
             <p>お知らせテキストが入ります。お知らせテキストが入ります。</p>
           </div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navlist" aria-expanded="false" style="float:left;">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="navbar" style="float:left;">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="glyphicon glyphicon-search"></span>
-            </button>
-          </div><!--/.navbar-header -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navlist,#secondheader-right-list" aria-expanded="false" aria-controls="navbar" style="float:left;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button type="button" id="search-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="navbar1" style="float:right;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
 
           <div class="firstheader-right header-list navlist navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right" id="firstheader-right-ul">
@@ -37,16 +37,19 @@
               <li><a href="#">運営企業</a></li>
             </ul>
           </div>
+        </div><!-- /.firstheader -->
 
-        <div class="navbar secondheader">
+        <div class="secondheader navbar1">
           <div class="secondheader-left nav navbar-nav">
-            <a class="navbar-brand" href="#"><img src="img/logo1.png"></a>
+            <a class="navbar-brand" href="#"><img id="brand-logo" src="img/logo1.png"></a>
           </div>
-          <div class="secondheader-right navbar-collapse collapse navbar-right">
-            <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-            <a href="#">カートを見る</a>
-            <a href="#" class="shd-btn">新規会員登録</a>
-            <a href="#" class="shd-btn">ログイン</a>
+          <div class="secondheader-right navbar-right">
+            <div id="secondheader-right-list" class="navbar-collapse collapse">
+              <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+              <a href="#">カートを見る</a>
+              <a href="#" class="shd-btn">新規会員登録</a>
+              <a href="#" class="shd-btn">ログイン</a>
+            </div>
             <div id="search" class="navbar-collapse collapse">
               <form class="navbar-form navbar-right">
                 <div class="form-group">
@@ -54,9 +57,10 @@
                 </div>
                 <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
               </form>
-            </div><!--/.nav-collapse -->
+            </div><!--/#search -->
           </div><!--/.secondheader-right -->
         </div><!--/.secondheader -->
+
       </div><!--/.container -->
     </nav>
 
