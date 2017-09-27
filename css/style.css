@@ -1,4 +1,5 @@
-/*Header*/
+/*-----------------------Header--------------------*/
+/*------------------------ firstheader ----------------*/
 .header-message,.header-list{
   background-color: #5f5f5f;
 }
@@ -18,8 +19,12 @@
   padding: 5px 15px;
   color: #fff;
 }
+/*--------------------------------------------------*/
+/*------------------ secondheader -------------------*/
 .secondheader{
   padding: 0 40px;
+  overflow: auto;
+  border-bottom: 0.7px solid #95989a;
 }
 .secondheader-right a{
   text-decoration: underline;
@@ -37,7 +42,21 @@
   border:1px solid #5f5f5f;
   background-color: #5f5f5f;
 }
-
+/*------------------------------------------------*/
+/*------------ thirdheader --------------------*/
+.thirdheader{
+  padding: 0 40px;
+}
+#thirdheader-list ul>li{
+  text-align: center;
+}
+#thirdheader-list ul>li>a{
+  color: #333;
+  font-weight: bold;
+}
+#thirdheader-list ul>li>a>p{
+  margin: 0;
+}
 @media (max-width: 719px) {
   .header-list{
     background-color: inherit;
