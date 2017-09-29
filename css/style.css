@@ -78,11 +78,15 @@
   word-wrap: break-word;
   overflow: auto;
 }
-.sidebar-left-search{
+.sidebar-left-box{
   overflow: auto;
   border-bottom: 0.7px solid #95989a;
 }
-.sidebar-left p{
+.sidebar-menu{
+  margin-top: 20px;
+  font-weight: bold;
+}
+.sidebar-submenu{
   margin-top: 20px;
 }
 .sidebar-left input{
@@ -95,6 +99,18 @@
   float: right;
   margin: 10px 0;
   font-weight: bold;
+}
+#feature-content{
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#sidebar-cate{
+  padding-bottom: 5px;
+  border-bottom: 0.7px solid #95989a;
+}
+.sidebar-content{
+  font-size: 11px;
 }
 /*-----------------------------------------------------------*/
 /*---------------- product-container -----------------------*/
