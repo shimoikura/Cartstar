@@ -116,6 +116,9 @@
 /*---------------- product-container -----------------------*/
 .product-container{
 }
+.product-list-container{
+  overflow: auto;
+}
 .product-top{
   height: 40px;
   position: relative;
@@ -181,6 +184,22 @@
   width: 100%;
   font-size: 8px;
 }
+/*---------------------------------------------------------------*/
+/*------------------------- pagenav-box -----------------------*/
+.pagenav-box{
+  text-align: center;
+  margin-top: 50px;
+}
+.pagenav-box span{
+  padding: 10px 15px;
+  border: 0.7px solid #95989a;
+  margin: 0 10px;
+}
+
+
+/*----------------------------------------------------------------*/
+                 /*mediaquery*/
+/*----------------------------------------------------------------*/
 @media (max-width: 719px) {
   .header-list{
     background-color: inherit;
