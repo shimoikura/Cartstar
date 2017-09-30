@@ -195,8 +195,29 @@
   border: 0.7px solid #95989a;
   margin: 0 10px;
 }
-
-
+/*-----------------------------------------------------------------*/
+ /*-------------------------bottom-container-----------------------*/
+.bottom-container-parent{
+  background-color: #e7e7e7;
+  margin-top: 50px;
+  padding: 50px 50px 30px !important;
+  overflow: auto;
+  display: table;
+}
+ .bottom-container{
+   display: table-cell;
+   height: 400px;
+   margin-bottom: 20px;
+ }
+.bottom-menu-box{
+  background: #fff;
+  border: 0.7px dotted #95989a;
+  padding: 15px;
+  height: 100%;
+}
+.bottom-menu-box ul{
+  padding-left: 15px;
+}
 /*----------------------------------------------------------------*/
                  /*mediaquery*/
 /*----------------------------------------------------------------*/
