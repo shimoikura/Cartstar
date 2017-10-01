@@ -218,6 +218,26 @@
 .bottom-menu-box ul{
   padding-left: 15px;
 }
+/*---------------------------------------------------------------------*/
+/*----------------------- footer ----------------------------------------*/
+.footer{
+  background-color: #5f5f5f;
+  text-align: center;
+}
+.footer ul{
+  margin-top: 40px;
+}
+.footer li{
+  display: inline-block;
+}
+.footer li > a{
+  color: #fff;
+  padding: 0 20px;
+}
+.footer p{
+  color: #fff;
+  margin-bottom: 20px;
+}
 /*----------------------------------------------------------------*/
                  /*mediaquery*/
 /*----------------------------------------------------------------*/
