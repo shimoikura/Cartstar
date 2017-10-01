@@ -239,7 +239,25 @@
   height: 100%;
 }
 .bottom-menu-box ul{
+  padding-left: 0;
+}
+.bottom-menu-box li > p{
+  display: inline-block;
   padding-left: 15px;
+}
+.bottom-menu-box li{
+  list-style: none;
+}
+.bottom-menu-box li:before{
+  content: '▶';
+  font-size: 7px;
+}
+.bottom-menu-title{
+  font-weight: bold;
+  border-bottom: 1px dotted #95989a;
+}
+.bottom-menu-subtitle{
+  padding-left: 10px !important;
 }
 /*---------------------------------------------------------------------*/
 /*----------------------- footer ----------------------------------------*/
