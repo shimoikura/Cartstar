@@ -82,6 +82,9 @@
   overflow: auto;
   border-bottom: 0.7px solid #95989a;
 }
+.sidebar-left-box img{
+  margin-top: 20px;
+}
 .sidebar-menu{
   margin-top: 20px;
   font-weight: bold;
@@ -107,10 +110,26 @@
 }
 #sidebar-cate{
   padding-bottom: 5px;
-  border-bottom: 0.7px solid #95989a;
+  margin-bottom: 0;
+}
+.slidebar-cate-box{
+  border-top: 0.7px solid #95989a;
+}
+.slidebar-cate-box a{
+  float: left;
+  margin: 0;
+  text-decoration: none;
+}
+.slidebar-cate-box ul{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: inline-block;
 }
 .sidebar-content{
   font-size: 11px;
+  color: #333;
+  text-decoration: none;
 }
 /*-----------------------------------------------------------*/
 /*---------------- product-container -----------------------*/
