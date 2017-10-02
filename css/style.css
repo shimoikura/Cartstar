@@ -152,14 +152,13 @@
 }
 .product-list-container{
   overflow: auto;
+  width: 100%;
+  padding: 0 !important;
 }
 .product-top{
   height: 40px;
   position: relative;
   margin-bottom: 30px;
-}
-.product-top h4{
-  margin-top:20px;
 }
 .product-top-left{
   float: left;
@@ -199,10 +198,6 @@
   float: left;
   margin-bottom: 0;
 }
-.product-list-container{
-  width: 100%;
-  padding: 0 !important;
-}
 .product-box{
   padding-left: 0 !important;
   padding-right: 25px !important;
@@ -224,6 +219,68 @@
 .product-review{
   width: 100%;
   font-size: 8px;
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------- middle-box ------------------------------*/
+.title-box{
+  border-bottom: 0.7px solid #95989a;
+  height: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.title-box h4{
+  margin-top:20px;
+}
+.middle-box{
+  margin-bottom: 30px;
+}
+.middle-box ul{
+  padding: 0;
+  border-bottom: 0.7px solid #95989a;
+}
+.middle-box li{
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.notice-date{
+  padding: 0 !important;
+}
+.notice-content a{
+  text-decoration: none;
+  color: #333;
+  font-size: 11px;
+}
+/*---------------------------------------------------------------*/
+/*------------------------ cell-status-box -------------------------*/
+.cell-status-box{
+  border: solid 0.7px #95989a;
+}
+.status-box{
+  padding: 0 0 20px !important;
+  border-bottom: solid 0.7px #95989a;
+}
+div.status-box:last-child{
+  border-bottom: 0;
+  padding-bottom: 0 !important;
+}
+.status-box-img{
+  padding: 0 !important;
+}
+.status-box-price{
+  color: red;
+  margin-bottom: 0;
+}
+.status-box-price-total{
+  color: #333;
+  font-size: 9px;
+}
+.status-box-description{
+  background-color: #eeeeee;
+  margin-top: 15px;
+}
+.status-box-description p{
+  margin: 0;
+  padding: 5px 0;
 }
 /*---------------------------------------------------------------*/
 /*------------------------- pagenav-box -----------------------*/
@@ -322,4 +379,21 @@
     right: 0;
     margin: auto;
   }
+  .middle-box li{
+    border: 0.7px solid #95989a;
+    margin: 0;
+  }
+  #notice-title{
+    margin-bottom: 0;
+  }
+  .notice-date{
+    padding-left: 15px !important;
+  }
+  .cell-status-box{
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+
 }
