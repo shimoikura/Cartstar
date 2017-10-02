@@ -333,6 +333,8 @@ div.product-status-box:last-child{
   padding-left: 0 !important;
   padding-right: 25px !important;
   margin-bottom: 25px;
+  display: flex;
+    flex-wrap: wrap;
 }
 .product-box img{
   width: 100%;
@@ -358,9 +360,11 @@ div.product-status-box:last-child{
   height: 40px;
   position: relative;
   margin-bottom: 30px;
+  width: 100%;
 }
 .title-box h4{
   margin-top:20px;
+  width: 100%;
 }
 .middle-box{
   margin-bottom: 30px;
