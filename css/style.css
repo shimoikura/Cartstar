@@ -89,6 +89,7 @@
   overflow: auto;
 }
 .sidebar-left-box{
+  padding: 0 !important;
   overflow: auto;
   border-bottom: 0.7px solid #95989a;
 }
@@ -156,6 +157,9 @@
   height: 40px;
   position: relative;
   margin-bottom: 30px;
+}
+.product-top h4{
+  margin-top:20px;
 }
 .product-top-left{
   float: left;
