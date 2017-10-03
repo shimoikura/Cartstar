@@ -524,7 +524,7 @@ div.status-box:last-child{
     display: block;
     float: right;
   }
-  #sidebar-search-box a{
+  .sidebar-left-box-campaign,#sidebar-search-box a{
     display: none;
   }
   #sidebar-search-box input{
