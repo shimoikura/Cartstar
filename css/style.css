@@ -448,6 +448,31 @@ div.status-box:last-child{
 .information-list p{
   font-size: 16px;
 }
+/*--------------------------------------------------------------------*/
+/*-------------------------- mobile-footer ------------------------------*/
+.mobile-footer{
+  padding: 0 !important;
+  position: fixed !important;
+  bottom: 0;
+}
+.mobile-footer-menu{
+  text-align: center;
+  background-color: #535353;
+  padding: 25px 0;
+  border-right: 1px dotted #fff;
+}
+div.mobile-footer-menu:last-child{
+  border-right: none;
+}
+.mobile-footer-icon{
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.mobile-footer-p{
+  color: #fff;
+  font-size: 16px;
+}
 /*-----------------------------------------------------------------*/
  /*-------------------------bottom-container-----------------------*/
 .bottom-container-parent{
