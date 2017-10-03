@@ -159,7 +159,7 @@
 /*---------------- product-container -----------------------*/
 /*-------------------------------------------------------------*/
 /*notice-mobile*/
-.notice-mobile{
+#sidebar-sns-box,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
   display: none;
 }
 /*---------------- product-left-box -------------------*/
@@ -439,6 +439,15 @@ div.status-box:last-child{
   border: 0.7px solid #95989a;
   margin: 0 10px;
 }
+/*-----------------------------------------------------------------------*/
+/*-------------------------- information-box -------------------------*/
+.information-list{
+  padding: 30px !important;
+  border-top: 0.7px solid #95989a;
+}
+.information-list p{
+  font-size: 16px;
+}
 /*-----------------------------------------------------------------*/
  /*-------------------------bottom-container-----------------------*/
 .bottom-container-parent{
@@ -581,7 +590,7 @@ div.status-box:last-child{
     display: none;
   }
   /*notice-mobile*/
-  .notice-mobile{
+  .notice-mobile,#campaign-title,#campaign-img{
     display: block;
   }
   .notice-mobile li{
@@ -589,6 +598,14 @@ div.status-box:last-child{
     margin: 0;
     overflow: auto;
     padding: 10px 0;
+  }
+  #campaign-img{
+    padding: 0 20px;
+  }
+  .rank-interest-box{
+    display: block;
+    padding: 15px !important;
+    background-color: #c9c9c9;
   }
   /*------------------------------------------------------------------*/
   .header-list{
@@ -626,6 +643,12 @@ div.status-box:last-child{
   }
   .cell-status-box{
     display: none;
+  }
+
+/*--------------------------------------------------------*/
+  /*------------------footer------------------*/
+  .information-box{
+   display: block;
   }
 }
 
