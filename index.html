@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/collapse.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -24,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <button type="button" id="search-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="navbar1" style="float:right;">
+          <button type="button" id="search-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-search-box" aria-expanded="false" aria-controls="navbar1" style="float:right;">
             <span class="sr-only">Toggle navigation</span>
             <span class="glyphicon glyphicon-search"></span>
           </button>
@@ -74,7 +75,7 @@
             </ul>
           </div>
         </div>
-        
+
       </div><!--/.container-fuid -->
     </nav>
 
@@ -82,10 +83,16 @@
     <div class="container">
       <div class="row">
         <div class="sidebar-left col-lg-2 col-md-2">
-          <div class="sidebar-left-box  navbar-collapse collapse">
+          <div id="sidebar-search-box" class="sidebar-left-box  navbar-collapse collapse">
+            <div class="col-sm-12 col-xs-12">
+              <img id="close" src="img/close.png" alt="">
+            </div>
             <p class="sidebar-menu">商品検索</p>
+            <p id="sidebar-cate" style="font-size:10px;">商品カテゴリー</p>
+            <p id="sidebar-new-pro" style="background-color:#dddddd; font-size:10px; padding:10px; font-weight:bold;">新着商品</p>
             <input type="text" name="" value="">
             <a href="#">詳細検索はこちら</a>
+            <button type="button" name="button">検索</button>
           </div><!--/.slideber-left-box -->
           <div class="sidebar-left-box navbar-collapse collapse">
             <p class="sidebar-submenu">特集</p>
