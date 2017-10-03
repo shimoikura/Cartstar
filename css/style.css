@@ -159,7 +159,7 @@
 /*---------------- product-container -----------------------*/
 /*-------------------------------------------------------------*/
 /*notice-mobile*/
-#sidebar-sns-box,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
+.mobile-sns,#sidebar-sns-box,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
   display: none;
 }
 /*---------------- product-left-box -------------------*/
@@ -472,6 +472,18 @@ div.mobile-footer-menu:last-child{
 .mobile-footer-p{
   color: #fff;
   font-size: 16px;
+}
+/*-----------------------------------------------------------------------*/
+/*--------------------------- mobile-sns ----------------------------------*/
+.mobile-sns{
+  display: block;
+  height: 50px;
+  padding-bottom: 300px;
+}
+.mobile-sns img{
+  float: left;
+  width: 70px;
+  margin: 0 25px;
 }
 /*-----------------------------------------------------------------*/
  /*-------------------------bottom-container-----------------------*/
