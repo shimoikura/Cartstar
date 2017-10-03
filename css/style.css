@@ -342,8 +342,6 @@ div.product-status-box:last-child{
   padding-left: 0 !important;
   padding-right: 25px !important;
   margin-bottom: 25px;
-  display: flex;
-    flex-wrap: wrap;
 }
 .product-box img{
   width: 100%;
