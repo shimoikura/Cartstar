@@ -227,7 +227,7 @@ width:100%;
 /*---------------- product-container -----------------------*/
 /*-------------------------------------------------------------*/
 /*notice-mobile*/
-.reponsive-menu-container,.cate-mobile,.mobile-footer,.mobile-sns-container,.mobile-sns,#sidebar-sns-box,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
+.reponsive-menu-container,.cate-mobile,.mobile-footer,.mobile-sns-container,.mobile-sns,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
   display: none;
 }
 /*---------------- product-left-box -------------------*/
@@ -595,7 +595,7 @@ div.status-box:last-child{
 /*----------------------------------------------------------------*/
 @media (max-width: 719px) {
   /*sidebar*/
-  .thirdheader,#search{
+  .thirdheader,#search,#sidebar-sns-box{
     display: none;
   }
   .sidebar-left{
