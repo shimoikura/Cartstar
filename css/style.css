@@ -698,6 +698,8 @@ div.status-box:last-child{
   .mobile-footer{
     display: block;
     padding: 0 !important;
+    position: fixed !important;
+    bottom: 0;
   }
   .mobile-footer-menu{
     text-align: center;
