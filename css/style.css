@@ -1,3 +1,61 @@
+/*レスポンシブ用メニュー*/
+.reponsive-menu-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 2;
+  background-color: #f6f6f6;
+  padding: 5px 20px 40px 20px !important;
+  opacity: 0.9;
+}
+.reponsive-menu-container img{
+  display: block;
+  float: right;
+}
+.reponsive-menu-container h4{
+  font-size: 24px;
+}
+.reponsive-menu-container span{
+  float: right;
+}
+.menu-title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.menu-subtitle{
+  background-color:#dddddd;
+  font-size:16px;
+  padding:10px;
+  font-weight:bold;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.menu-subtitle a{
+  color: #333;
+}
+.reponsive-menu-container ul{
+  padding: 0;
+}
+.reponsive-menu-container li{
+  border-bottom: 0.7px solid #95989a;
+  margin: 0;
+  overflow: auto;
+  padding: 20px;
+}
+.menu-content{
+  font-size: 16px;
+  color: #333;
+}
+.reponsive-menu-container button{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #fff;
+  margin: 40px 0;
+}
+
 /*-----------------------Header--------------------*/
 /*------------------------ firstheader ----------------*/
 .header-message,.header-list{
@@ -121,6 +179,7 @@ width:100%;
 .sidebar-menu{
   margin-top: 20px;
   font-weight: bold;
+  font-size: 24px;
 }
 .sidebar-submenu{
   margin-top: 20px;
@@ -168,7 +227,7 @@ width:100%;
 /*---------------- product-container -----------------------*/
 /*-------------------------------------------------------------*/
 /*notice-mobile*/
-.cate-mobile,.mobile-footer,.mobile-sns-container,.mobile-sns,#sidebar-sns-box,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
+.reponsive-menu-container,.cate-mobile,.mobile-footer,.mobile-sns-container,.mobile-sns,#sidebar-sns-box,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
   display: none;
 }
 /*---------------- product-left-box -------------------*/
@@ -536,7 +595,7 @@ div.status-box:last-child{
 /*----------------------------------------------------------------*/
 @media (max-width: 719px) {
   /*sidebar*/
-  #search{
+  .thirdheader,#search{
     display: none;
   }
   .sidebar-left{
