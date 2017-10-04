@@ -594,6 +594,10 @@ div.status-box:last-child{
                  /*mediaquery*/
 /*----------------------------------------------------------------*/
 @media (max-width: 719px) {
+  /*商品一覧ページ*/
+  .product-top{
+    display: none;
+  }
   /*sidebar*/
   .thirdheader,#search,#sidebar-sns-box{
     display: none;
@@ -742,7 +746,7 @@ div.status-box:last-child{
   .mobile-sns{
     display: block;
     height: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
   }
   .mobile-sns img{
     float: left;
@@ -757,7 +761,7 @@ div.status-box:last-child{
   .mobile-footer{
     display: block;
     padding: 0 !important;
-    position: fixed !important;
+    /*position: absolute !important;*/
     bottom: 0;
   }
   .mobile-footer-menu{

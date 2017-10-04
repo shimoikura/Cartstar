@@ -5,11 +5,31 @@
     <title>Cartstar</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script type="text/javascript" href="bootstrap.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/collapse.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
   </head>
   <body>
+
+        <!-- Top Page Slider Setting -------------------------------------------------------------------->
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.bxslider').bxSlider({
+                      auto: true//自動切り替えの有無
+                    //  pause:6000,//停止時間※デフォルトは4000
+                    //  speed:1000,//動くスピード※デフォルトは500
+                    //  minSlides: 3,//一度に表示させる画像の最小値
+                    //  maxSlides: 4,//一度に表示させる画像の数
+                    //  slideWidth: 250,
+                    //  slideMargin: 10,
+                    //  pager: false,
+                    //  controls: false
+                    });
+              });
+         </script>
     <!-- Header -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -18,13 +38,13 @@
           <div class="firstheader-left header-message navbar-header">
             <p>お知らせテキストが入ります。お知らせテキストが入ります。</p>
           </div>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navlist,#secondheader-right-list" aria-expanded="false" aria-controls="navbar, footer" style="float:left;">
+          <button type="button" id="menu-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".reponsive-menu-container" aria-expanded="false" aria-controls="navbar, footer" style="float:left;">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <button type="button" id="search-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="navbar1" style="float:right;">
+          <button type="button" id="search-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-search-box" aria-expanded="false" aria-controls="navbar1" style="float:right;">
             <span class="sr-only">Toggle navigation</span>
             <span class="glyphicon glyphicon-search"></span>
           </button>
@@ -64,7 +84,7 @@
 
         <!-- ThirdHeader -->
         <div class="thirdheader">
-          <div id="thirdheader-list" class="navlist">
+          <div id="thirdheader-list">
             <ul class="nav navbar-nav">
               <li><a href="#"><p>メニュータイトル01</p><p>menu title01</p></a></li>
               <li><a href="#"><p>メニュータイトル01</p><p>menu title01</p></a></li>
@@ -75,27 +95,76 @@
           </div>
         </div>
 
-        <!-- Postion Menu -->
-        <div class="position-menu">
-          <p>トップ</p>
-        </div>
-      </div><!--/.container-fluid -->
+      </div><!--/.container-fuid -->
     </nav>
 
+
+    <!-- レスポンシブ用メニュー -->
+    <div class="container-fluid reponsive-menu-container">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
+          <img id="menu-close" src="img/close.png" alt="">
+        </div>
+        <div class="col-sm-12 col-xs-12">
+          <h4>メニュー</h4>
+          <p class="menu-title">商品カテゴリー</p>
+          <p class="menu-subtitle">新着商品 <span>▶</span></p>
+          <p class="menu-subtitle">カテゴリー1</p>
+          <ul>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+          </ul>
+          <p class="menu-subtitle">カテゴリー1</p>
+          <ul>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+          </ul>
+          <p class="menu-subtitle">カテゴリー1</p>
+          <ul>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+            <li><a class="menu-content" href="#">カテゴリー1<span>▶</span></a></li>
+          </ul>
+          <p class="menu-title">会員メニュー</p>
+          <p class="menu-subtitle"><a href="#">ログイン<span>▶</span></a></p>
+          <p class="menu-subtitle"><a href="#">新規会員登録<span>▶</span></a></p>
+          <p class="menu-title">インフォメーション</p>
+          <p class="menu-subtitle"><a href="#">ご利用ガイド<span>▶</span></a></p>
+          <p class="menu-subtitle"><a href="#">FAQ<span>▶</span></a></p>
+          <p class="menu-subtitle"><a href="#">会社概要<span>▶</span></a></p>
+          <p class="menu-subtitle"><a href="#">お問合せ<span>▶</span></a></p>
+          <p class="menu-subtitle"><a href="#">個人情報保護方針<span>▶</span></a></p>
+          <p class="menu-subtitle"><a href="#">特定商取引に関する表示<span>▶</span></a></p>
+          <button type="button" name="button">閉じる</button>
+
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row">
         <div class="sidebar-left col-lg-2 col-md-2">
-          <div class="sidebar-left-box  navbar-collapse collapse">
+          <div id="sidebar-search-box" class="sidebar-left-box  navbar-collapse collapse">
+            <div class="col-sm-12 col-xs-12">
+              <img id="close" src="img/close.png" alt="">
+            </div>
             <p class="sidebar-menu">商品検索</p>
+            <p id="sidebar-cate" style="font-size:16px;">商品カテゴリー</p>
+            <p id="sidebar-new-pro" style="background-color:#dddddd; font-size:16px; padding:10px; font-weight:bold;">新着商品</p>
             <input type="text" name="" value="">
             <a href="#">詳細検索はこちら</a>
+            <button type="button" name="button">検索</button>
           </div><!--/.slideber-left-box -->
           <div class="sidebar-left-box navbar-collapse collapse">
             <p class="sidebar-submenu">特集</p>
             <p id="feature-content">特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。</p>
           </div>
-          <div class="sidebar-left-box">
+          <div class="sidebar-left-box  navbar-collapse collapse" id="cate-container">
             <p class="sidebar-menu"id="sidebar-cate">カテゴリー</p>
             <div class="slidebar-cate-box">
               <p class="sidebar-submenu">カテゴリー1</p>
@@ -132,16 +201,18 @@
             </div>
           </div><!--/.slideber-left-box -->
 
-          <div class="sidebar-left-box">
-            <img class="img-responsive" src="img/sideleft.png" alt="">
+          <div class="sidebar-left-box-campaign">
+            <div class="sidebar-left-box">
+              <img class="img-responsive" src="img/sideleft.png" alt="">
+            </div>
+            <div class="sidebar-left-box">
+              <img class="img-responsive" src="img/sideleft.png" alt="">
+            </div>
+            <div class="sidebar-left-box">
+              <img class="img-responsive" src="img/sideleft.png" alt="">
+            </div>
           </div>
-          <div class="sidebar-left-box">
-            <img class="img-responsive" src="img/sideleft.png" alt="">
-          </div>
-          <div class="sidebar-left-box">
-            <img class="img-responsive" src="img/sideleft.png" alt="">
-          </div>
-          <div class="sidebar-left-box" style="border:none;">
+          <div id="sidebar-sns-box" class="sidebar-left-box" style="border:none;">
             <table>
               <tr>
                 <td><img class="img-responsive" src="img/facebook.png" alt=""></td>
@@ -153,103 +224,189 @@
           </div>
         </div><!--/.slideber-left -->
 
-        <div class="product-container col-lg-10 col-md-10 ">
-          <div class="product-top">
-            <div class="product-top-left">
-              <ul>
-                <li><h2>商品一覧</h2></li>
-                <li><p>全0000商品</p></li>
-              </ul>
-            </div>
-            <div class="product-top-right">
-              <ul>
-                <li><a href="#">新着順</a></li>
-                <li><a href="#">価格安い順</a></li>
-                <li><a href="#">価格高い順</a></li>
-                <li><a href="#">レビュー高評価準</a></li>
-                <li><a href="#" style="border:none">キニナル多い順</a></li>
-              </ul>
-            </div>
-          </div><!--/.product-top -->
-          <div class="product-list-container col-md-12 col-sm-12 col-xs-12">
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-            <div class="product-box col-md-3 col-sm-4 col-xs-4">
-              <img src="img/pro.png" alt="" class="img-responsive">
-              <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
-              <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
-              <p class="product-review">
-                <span>☆☆☆☆☆</span><span>0.00</span>
-                <span>00</span><span>件</span>
-              </p>
-            </div>
-          </div><!--/.product-list-container -->
 
-          <div class="pagenav-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <span>＜＜ 最初</span><span>＜ 前</span><span>1</span><span>2</span><span>次 ＞</span><span>最後 ＞＞</span>
+
+
+
+<!-- ////////////////////////////////////////// 可変領域 ////////////////////////////////////////////////////////////// -->
+<div class="product-container col-lg-10 col-md-10 ">
+  <div class="product-top">
+    <div class="product-top-left">
+      <ul>
+        <li><h2>商品一覧</h2></li>
+        <li><p>全0000商品</p></li>
+      </ul>
+    </div>
+    <div class="product-top-right">
+      <ul>
+        <li><a href="#">新着順</a></li>
+        <li><a href="#">価格安い順</a></li>
+        <li><a href="#">価格高い順</a></li>
+        <li><a href="#">レビュー高評価準</a></li>
+        <li><a href="#" style="border:none">キニナル多い順</a></li>
+      </ul>
+    </div>
+  </div><!--/.product-top -->
+  <div class="product-list-container col-md-12 col-sm-12 col-xs-12">
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+    <div class="product-box col-md-3 col-sm-4 col-xs-4">
+      <img src="img/pro.png" alt="" class="img-responsive">
+      <p class="product-text">商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。商品タイトルが入ります。</p>
+      <p class="product-price"><span style="font-weight:bold;">00,0000</span><span>円(税込)</span></p>
+      <p class="product-review">
+        <span>☆☆☆☆☆</span><span>0.00</span>
+        <span>00</span><span>件</span>
+      </p>
+    </div>
+  </div><!--/.product-list-container -->
+
+<!-- ////////////////////////////////////////// 可変領域 ////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- インフォメーション(モバイルのみ) -->
+        <div class="information-box">
+          <div class="title-box col-sm-12 col-xs-12" style="margin-bottom:0; border:none;">
+            <h4>インフォメーション</h4>
           </div>
-        </div><!--/.product-container -->
+          <div class="information-list col-sm-12 col-xs-12">
+            <p style="float:left">ご利用ガイド</p>
+            <p style="float:right">▶</p>
+          </div>
+          <div class="information-list col-sm-12 col-xs-12">
+            <p style="float:left">FAQ</p>
+            <p style="float:right">▶</p>
+          </div>
+          <div class="information-list col-sm-12 col-xs-12">
+            <p style="float:left">会社概要</p>
+            <p style="float:right">▶</p>
+          </div>
+          <div class="information-list col-sm-12 col-xs-12">
+            <p style="float:left">お問合せ</p>
+            <p style="float:right">▶</p>
+          </div>
+          <div class="information-list col-sm-12 col-xs-12">
+            <p style="float:left">個人情報保護方針</p>
+            <p style="float:right">▶</p>
+          </div>
+          <div class="information-list col-sm-12 col-xs-12">
+            <p style="float:left">特定商取引に関する表示</p>
+            <p style="float:right">▶</p>
+          </div>
+        </div>
+
+        <!-- SNSボックス（モバイルのみ） -->
+        <div class="mobile-sns col-sm-12 col-xs-12">
+          <div class="mobile-sns-container" style="margin:0 auto; width:500px;">
+            <img class="img-responsive" src="img/facebook.png" alt="">
+            <img class="img-responsive" src="img/twitter.png" alt="">
+            <img class="img-responsive" src="img/instagram.png" alt="">
+            <img class="img-responsive" src="img/line.png" alt="">
+          </div>
+        </div>
+
+        <!-- フッター（モバイルのみ） -->
+        <div class="mobile-footer col-sm-12 col-xs-12">
+          <div class="mobile-footer-menu col-sm-3 col-xs-3">
+            <p class="mobile-footer-icon"><span class="glyphicon glyphicon-home"></span></p>
+            <p class="mobile-footer-p">ホーム</p>
+          </div>
+          <div class="mobile-footer-menu col-sm-3 col-xs-3">
+            <p class="mobile-footer-icon"><span class="glyphicon glyphicon-user"></span></p>
+            <p class="mobile-footer-p">新規会員登録</p>
+          </div>
+          <div class="mobile-footer-menu col-sm-3 col-xs-3">
+            <p class="mobile-footer-icon"><span class=" glyphicon glyphicon-lock"></span></p>
+            <p class="mobile-footer-p">ログイン</p>
+          </div>
+          <div class="mobile-footer-menu col-sm-3 col-xs-3">
+            <p class="mobile-footer-icon"><span class=" glyphicon glyphicon-shopping-cart"></span></p>
+            <p class="mobile-footer-p">カートを見る</p>
+          </div>
+        </div>
+
+
+
       </div><!--/.row -->
     </div><!--/.containert -->
 
