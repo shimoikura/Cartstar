@@ -155,7 +155,10 @@ width:100%;
   word-wrap: break-word;
   overflow: auto;
 }
-#sidebar-search-box button,img{
+#sidebar-search-box button{
+  display: none;
+}
+#sidebar-search-box img{
   display: none;
 }
 #sidebar-search-box input{
@@ -227,12 +230,17 @@ width:100%;
 /*---------------- product-container -----------------------*/
 /*-------------------------------------------------------------*/
 /*notice-mobile*/
-.reponsive-menu-container,.cate-mobile,.mobile-footer,.mobile-sns-container,.mobile-sns,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
+.product-left-sns-mobile,.product-img-slide,.reponsive-menu-container,.cate-mobile,.mobile-footer,.mobile-sns-container,.mobile-sns,.notice-mobile,#campaign-title,#campaign-img,.rank-interest-box,.information-box{
   display: none;
 }
 /*---------------- product-left-box -------------------*/
 .product-left-box{
   padding: 0 !important;
+}
+#product-main-img{
+  width: 100%;
+  padding:0 15px 0 0;
+  margin-bottom: 20px;
 }
 .product-left-box img{
   width: 100%;
@@ -594,6 +602,55 @@ div.status-box:last-child{
                  /*mediaquery*/
 /*----------------------------------------------------------------*/
 @media (max-width: 719px) {
+  /*商品詳細ページ*/
+  .product-left-sns,#product-main-img,.product-detail-container-title{
+    display: none;
+  }
+  .product-img-slide{
+    display: block;
+    margin: 0 20px;
+  }
+  .product-img-slide img{
+    padding: 0;
+  }
+  .product-right-box{
+    padding-right: 15px !important;
+  }
+  .product-bellow{
+    position: relative;
+    height: 500px;
+  }
+  #product-menu{
+    position: absolute;
+    bottom: -30px;
+  }
+  .product-left-sns-mobile{
+    display: block;
+    margin: 20px 0;
+    padding: 30px;
+    background-color: #eeeeee;
+  }
+  #product-wrap{
+    position:absolute;
+    top:0;
+  }
+  #product-descripton{
+    height: 30%;
+    padding-right: 30px;
+  }
+  #product-feature{
+    height: 70%;
+  }
+  .product-container-review{
+    padding: 0;
+  }
+  .product-container-review a{
+    display: block;
+    border: none !important;
+    text-align: left;
+    margin-top: 10px;
+    text-decoration: none;
+  }
   /*商品一覧ページ*/
   .product-top{
     display: none;
