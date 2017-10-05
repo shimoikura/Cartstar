@@ -685,6 +685,19 @@ div.status-box:last-child{
     bottom: 0;
     border: none;
   }
+  /*トップページ*/
+  .product-topbox img{
+    width: 100% !important;
+    float: inherit !important;
+  }
+  .product-topbox p{
+    width: auto !important;
+    padding:0 !important;
+    float: inherit !important;
+  }
+  .product-topbox-review{
+    display: none;
+  }
 
   /*商品詳細ページ*/
   .product-left-sns,#product-main-img,.product-detail-container-title{
@@ -831,6 +844,9 @@ div.status-box:last-child{
   .product-list-container{
     padding: 0 20px !important;
   }
+  #rank-container{
+    padding-right: 0 !important;
+  }
   #notice-title{
     background-color:#eeeeee;
     border: solid 0.7px #95989a;
@@ -864,6 +880,12 @@ div.status-box:last-child{
     display: block;
     padding: 15px !important;
     background-color: #c9c9c9;
+  }
+  .rank-interest-box p:first-child{
+    width: 100% !important;
+  }
+  .rank-interest-box p{
+     padding:5px 10px !important;
   }
   .sidebar-submenu{
     background-color:#eeeeee;
