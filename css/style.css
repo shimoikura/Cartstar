@@ -162,12 +162,19 @@
 }
 /*------------------------------------------------------*/
 /*---------------- top-img-bpx ---------------------*/
+.top-img-box{
+  padding: 0 30px;
+}
 /*bxsliderの余白なくすため*/
 .top-img-box li{
 width: 1500px;
 }
 .top-img-box img{
 width: 100%;
+}
+.bx-wrapper .bx-controls-direction a{
+  bottom: -5% !important;
+  top: inherit !important;
 }
 /*-----------------------------------------------*/
 /*-------------- postion-menu ---------------------*/
@@ -681,6 +688,10 @@ div.status-box:last-child{
 
   .secondheader-left .navbar-brand {
     padding-top: 7.5px;
+  }
+  .bx-wrapper .bx-controls-direction a{
+    bottom: -10% !important;
+    top: inherit !important;
   }
 
   #menu-btn {
