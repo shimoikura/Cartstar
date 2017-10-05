@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Cartstar</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/collapse.js"></script>
@@ -13,42 +13,14 @@
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
   </head>
   <body>
-
-        <!-- Top Page Slider Setting -------------------------------------------------------------------->
-        <script type="text/javascript">
-                $(document).ready(function(){
-                    $('.bxslider').bxSlider({
-                      auto: true//自動切り替えの有無
-                    //  pause:6000,//停止時間※デフォルトは4000
-                    //  speed:1000,//動くスピード※デフォルトは500
-                    //  minSlides: 3,//一度に表示させる画像の最小値
-                    //  maxSlides: 4,//一度に表示させる画像の数
-                    //  slideWidth: 250,
-                    //  slideMargin: 10,
-                    //  pager: false,
-                    //  controls: false
-                    });
-              });
-         </script>
     <!-- Header -->
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container-fluid cart-header">
         <!-- FirstHeader -->
         <div class="firstheader">
           <div class="firstheader-left header-message navbar-header">
             <p>お知らせテキストが入ります。お知らせテキストが入ります。</p>
           </div>
-          <button type="button" id="menu-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".reponsive-menu-container" aria-expanded="false" aria-controls="navbar, footer" style="float:left;">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <button type="button" id="search-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-search-box" aria-expanded="false" aria-controls="navbar1" style="float:right;">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-
           <div class="firstheader-right header-list navlist navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right" id="firstheader-right-ul">
               <li><a href="#">ご利用ガイド <span class="sr-only">(current)</span></a></li>
@@ -59,9 +31,21 @@
           </div>
         </div><!-- /.firstheader -->
 
+        <div class="border"></div>
+
         <!-- SecondHeaer -->
-        <div class="secondheader navbar1">
+        <div class="secondheader navbar1 container">
           <div class="secondheader-left nav navbar-nav">
+            <button type="button" id="menu-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".reponsive-menu-container" aria-expanded="false" aria-controls="navbar, footer" style="float:left;">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <button type="button" id="search-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-search-box" aria-expanded="false" aria-controls="navbar1" style="float:right;">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
             <a class="navbar-brand" href="#"><img id="brand-logo" src="img/logo1.png"></a>
           </div>
           <div class="secondheader-right navbar-right">
@@ -82,8 +66,10 @@
           </div><!--/.secondheader-right -->
         </div><!--/.secondheader -->
 
+        <div class="border"></div>
+
         <!-- ThirdHeader -->
-        <div class="thirdheader">
+        <div class="thirdheader container">
           <div id="thirdheader-list">
             <ul class="nav navbar-nav">
               <li><a href="#"><p>メニュータイトル01</p><p>menu title01</p></a></li>
@@ -170,7 +156,7 @@
             <p class="sidebar-submenu">特集</p>
             <p id="feature-content">特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。特集タイトルが入ります。</p>
           </div>
-          <div class="sidebar-left-box" id="cate-container">
+          <div class="sidebar-left-box  navbar-collapse collapse" id="cate-container">
             <p class="sidebar-menu"id="sidebar-cate">カテゴリー</p>
             <div class="slidebar-cate-box">
               <p class="sidebar-submenu">カテゴリー1</p>
@@ -208,13 +194,13 @@
           </div><!--/.slideber-left-box -->
 
           <div class="sidebar-left-box-campaign">
-            <div class="sidebar-left-box col-sm-4 col-xs-4">
+            <div class="sidebar-left-box">
               <img class="img-responsive" src="img/sideleft.png" alt="">
             </div>
-            <div class="sidebar-left-box col-sm-4 col-xs-4">
+            <div class="sidebar-left-box">
               <img class="img-responsive" src="img/sideleft.png" alt="">
             </div>
-            <div class="sidebar-left-box col-sm-4 col-xs-4">
+            <div class="sidebar-left-box">
               <img class="img-responsive" src="img/sideleft.png" alt="">
             </div>
           </div>
