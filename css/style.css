@@ -908,6 +908,14 @@ div.status-box:last-child{
     overflow: auto;
     padding: 10px 0;
   }
+  .notice-mobile i{
+    position:absolute;
+    top:15px;
+    right:40px;
+  }
+  .list-open-btn{
+    display: none;
+  }
   #campaign-img{
     padding: 0 20px;
   }
@@ -939,9 +947,9 @@ div.status-box:last-child{
     padding: 30px;
     font-size: 18px;
   }
-  .slidebar-cate-box img{
+  .slidebar-cate-box i{
     position:absolute;
-    top:50px;
+    top:35px;
     right:40px;
   }
   .slidebar-cate-box span{

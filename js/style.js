@@ -13,7 +13,7 @@ $(document).ready(function(){
       });
 
 
-// モバイルのトップのボタン操作      
+// モバイルのトップのボタン操作
   // 検索ボックスを閉じる
   $("#close").click(function(){
     $("#sidebar-search-box").collapse("hide");
@@ -26,7 +26,25 @@ $(document).ready(function(){
   $("#menu-close").click(function(){
     $(".reponsive-menu-container").collapse("hide");
   });
-  $("$menu-btn").click(function(){
+  $("#menu-close-btn").click(function(){
+    $(".reponsive-menu-container").collapse("hide");
+    $("#sidebar-search-box").collapse("hide");
+  });
+  $("#menu-btn").click(function(){
     $(".reponsive-menu-container").collapse("show");
+  });
+
+  // リストの開閉
+  $(".list-close-btn").click(function(){
+    $(this).parents().siblings("ul").hide();
+    $(this).siblings("ul").hide();
+    $(this).siblings(".list-open-btn").show();
+    $(this).hide();
+  });
+  $(".list-open-btn").click(function(){
+    $(this).parents().siblings("ul").show();
+    $(this).siblings("ul").show();
+    $(this).siblings(".list-close-btn").show();
+    $(this).hide();
   });
 });
